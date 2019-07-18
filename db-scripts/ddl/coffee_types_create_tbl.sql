@@ -1,0 +1,4 @@
+CREATE TABLE tbl_coffee_type (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    coffee_type VARCHAR(100))
+ENGINE=INNODB;
