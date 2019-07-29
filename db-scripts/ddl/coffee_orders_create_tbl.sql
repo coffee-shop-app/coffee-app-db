@@ -11,7 +11,7 @@ CREATE TABLE tbl_coffee_orders (
     coffee_type_id INT,
     place VARCHAR(100),
     address VARCHAR(300),
-    RATING INT CHECK(RATING <= 10),
+    rating INT CHECK(rating <= 10),
     FOREIGN KEY(coffee_name_id) REFERENCES tbl_coffee_name(id) ON DELETE SET NULL,
     FOREIGN KEY(coffee_type_id) REFERENCES tbl_coffee_type(id) ON DELETE SET NULL)
 ENGINE=INNODB;
